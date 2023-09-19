@@ -1,0 +1,31 @@
+﻿<Window x:Class="Wpf_poe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_poe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="module_code" Content="CODE" HorizontalAlignment="Left" Height="31" Margin="26,20,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="module_name" Content="NAME" HorizontalAlignment="Left" Height="31" Margin="26,70,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="number_of_credits" Content="NUMBER OF CREDITS" HorizontalAlignment="Left" Height="31" Margin="26,165,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="hours_per_week" Content="HOURS PER WEEK" HorizontalAlignment="Left" Height="40" Margin="26,117,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label x:Name="number_of_weeks" Content="NUMBER OF WEEKS" HorizontalAlignment="Left" Height="34" Margin="26,217,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="start_date" Content="START DATE" HorizontalAlignment="Left" Height="31" Margin="26,266,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label x:Name="number_of_hours" Content="NUMBER OF HOURS" HorizontalAlignment="Left" Height="37" Margin="26,314,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Height="23" Margin="212,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="31" Margin="212,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="txthours_per_week" HorizontalAlignment="Left" Height="24" Margin="212,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="txtnumber_of_credits" HorizontalAlignment="Left" Height="30" Margin="212,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="txtnumber_of_weeks" HorizontalAlignment="Left" Height="16" Margin="212,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.497,1.489"/>
+        <TextBox x:Name="txtnumber_of_hours" HorizontalAlignment="Left" Height="39" Margin="212,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <DatePicker x:Name="txt_datePicker" HorizontalAlignment="Left" Height="41" Margin="212,256,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="btn_ADD" Content="ADD" HorizontalAlignment="Left" Height="20" Margin="309,385,0,0" VerticalAlignment="Top" Width="66" Click="btn_ADD_Click"/>
+        <Button x:Name="btn_CLEAR" Content="CLEAR" HorizontalAlignment="Left" Height="25" Margin="429,380,0,0" VerticalAlignment="Top" Width="80" Click="btn_CLEAR_Click"/>
+        <Button x:Name="btn_DISPLAY" Content="DISPLAY" HorizontalAlignment="Left" Height="23" Margin="559,381,0,0" VerticalAlignment="Top" Width="68" Click="btn_DISPLAY_Click"/>
+        <ListBox x:Name="list_Box" HorizontalAlignment="Left" Height="204" Margin="509,78,0,0" VerticalAlignment="Top" Width="225"  SelectionChanged="list_Box_SelectionChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="23" Margin="375,20,0,0" TextWrapping="Wrap" Text="MANAGEMENT APPLICATION" VerticalAlignment="Top" Width="279"/>
+    </Grid>
+</Window>
